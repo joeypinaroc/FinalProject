@@ -11,6 +11,7 @@ namespace FinalProject
         static void Main(string[] args)
         {
             Console.WriteLine("Hello world");
+            Console.WriteLine("change");
         }
     }
 }
