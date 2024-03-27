@@ -8,10 +8,6 @@ namespace Project
 {
     public class Board
     {
-        // class member incomplete
-        // create data structure to store the board
-        // this is only a dummy as a placeholder
-
         private string[] playerSym = {"#", "X", "O"};// symbol for empty, p1 & p2
 
         public const int MaxCol = 7; // column from 1 to MaxCol
