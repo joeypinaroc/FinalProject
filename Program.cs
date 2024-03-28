@@ -140,7 +140,6 @@ namespace Project
         public override string ToString()
         {
             // return print out of board as string
-            // add a line for win or draw if hasFinished() != -1
 
             string printout = "";
 
