@@ -1,8 +1,8 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Runtime.Intrinsics.X86;
+//using System.ComponentModel.DataAnnotations;
+//using System.Runtime.Intrinsics.X86;
 using System.Text;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Project
 {
@@ -273,7 +273,7 @@ namespace Project
                             playerInput = Console.ReadLine();
                             playCol = int.TryParse(playerInput, out playCol)? playCol : 0;
                         }
-                        while ( playCol is not >= 1 or not <= Board.MaxCol );
+                        while ( playCol < 1 || playCol > Board.MaxCol );
                     }
                     else
                     {
@@ -282,7 +282,7 @@ namespace Project
                             Console.WriteLine("Oops! The last move cannot be made because column is full.");
                         }
                         playerInput = ((compPlayer)nextPlayer).smartMove(Board.MaxCol);
-                        Thread.Sleep(1000);
+                        System.Threading.Thread.Sleep(1000);
                         Console.WriteLine(nextPlayer.name + " (computer) play at column " + playerInput);
                     }
                     isMoveValid = false;
