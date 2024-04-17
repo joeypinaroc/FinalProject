@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * link to Github repository: https://github.com/joeypinaroc/SODV1202-FinalProject
+ */
+
+using System;
 //using System.ComponentModel.DataAnnotations;
 //using System.Runtime.Intrinsics.X86;
 using System.Text;
